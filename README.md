@@ -15,7 +15,7 @@ MovieFinder is a lightweight and user-friendly React app that allows users to se
 🛠️ Technologies Used
 
 
-React - Frontend library
-Axios - To make API requests
-OMDb API - Movie database
+-React - Frontend library
+-Axios - To make API requests
+-OMDb API - Movie database
  
