@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="container">
       <h1>Movie Finder</h1>
+     
       <div className="search-box">
         <input
           type="text"
@@ -39,7 +40,7 @@ function App() {
           <h2>{movie.Title} ({movie.Year})</h2>
           <img src={movie.Poster} alt={movie.Title} />
           <p><strong>IMDB Rating:</strong>  {movie.imdbRating}</p>
-          <p><strong>Plot:</strong> {movie.Plot}</p>
+          <p><strong></strong> {movie.Plot}</p>
         </div>
       ) : (
         movie && <p>Movie Not Found</p>
