@@ -1,46 +1,91 @@
-/* App.css */
+/* app.css */
+
+/* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(120deg, #1f4037, #99f2c8);
-  color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #bbb;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #ffcc00;
+  color: #121212;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #e6b800;
+}
+
+/* Movie Info */
+.movie-info {
+  margin-top: 20px;
   text-align: center;
 }
 
-input {
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  margin: 10px auto;
-  display: block;
-  border-radius: 5px;
-  border: none;
-}
-
-button {
-  background: #ff9800;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background: #e68a00;
-}
-
-.movie-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  display: inline-block;
-  width: 250px;
-}
-
-.movie-card img {
+.movie-info img {
   width: 100%;
+  max-width: 300px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
+.movie-info h2 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 10px;
+}
